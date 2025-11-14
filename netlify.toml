@@ -1,5 +1,17 @@
+# -------------------------------
+# Netlify configuration for Vite frontend
+# -------------------------------
 
 [build]
-  base = "Frontend"
+  # Frontend folder name (case-sensitive)
+  base = "frontend"
+  # Vite build output folder
   publish = "dist"
+  # Command to build the frontend
   command = "npm run build"
+
+# Redirect all requests to index.html for React Router (SPA support)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
