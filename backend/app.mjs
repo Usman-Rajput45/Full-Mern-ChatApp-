@@ -184,7 +184,7 @@ const __dirname = path.dirname(__filename);
 // ✅ Allowed origins
 const allowedOrigins = [
   "https://chatapppr.netlify.app", // Frontend live
-  "https://full-mern-chatapp-production-24b5.up.railway.app" // Backend (self)
+  "https://full-mern-chatapp-production-dae4.up.railway.app/" // Backend (self)
 ];
 
 // ✅ Global CORS Middleware (with credentials)

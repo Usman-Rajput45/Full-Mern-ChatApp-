@@ -9,7 +9,7 @@ import ChatBox from "../components/ChatBox";
 
 // const socket = io("http://localhost:8000");
 
-const socket = io("https://full-mern-chatapp-production-24b5.up.railway.app", {
+const socket = io("https://full-mern-chatapp-production-dae4.up.railway.app/", {
   transports: ["websocket"],
   secure: true,
     withCredentials: true, // ensure only websocket transport
