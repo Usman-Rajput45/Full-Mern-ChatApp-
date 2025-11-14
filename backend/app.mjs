@@ -22,12 +22,32 @@ const __dirname = path.dirname(__filename);
 
 
 const server = http.createServer(app)
+// const io = new Server(server, {
+//     cors: {
+//         origin: "*",
+//         methods: ["GET", "POST"]
+//     }
+// });
+
+
 const io = new Server(server, {
-    cors: {
-        origin: "*",
-        methods: ["GET", "POST"]
-    }
-})
+  cors: {
+    origin: [
+      "https://chatapppr.netlify.app",  // Frontend URL
+      "http://localhost:3000"            // Local development (optional)
+    ],
+    methods: ["GET", "POST"]
+  }
+});
+
+app.use(cors({
+  origin: [
+    "https://chatapppr.netlify.app",  // Frontend URL
+    "http://localhost:3000"
+  ]
+}));
+
+
 
 
 //db connectin
