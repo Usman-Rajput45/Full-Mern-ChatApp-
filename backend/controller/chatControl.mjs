@@ -1,9 +1,4 @@
-// export const getMessage = (req, res) => {
-//     res.json([
-//         {user: "Alice", message: "Hello!"},
-//         {user: "Bob", message: "Hi there!"}
-//     ])
-// } 
+
 
 
 
