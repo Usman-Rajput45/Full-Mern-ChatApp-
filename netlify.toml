@@ -1,0 +1,13 @@
+[build]
+  # React frontend folder
+  base = "frontend"
+  # Command to build React app
+  command = "npm run build"
+  # Output folder after build
+  publish = "frontend/build"
+
+# Redirect all requests to index.html (for React Router support)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

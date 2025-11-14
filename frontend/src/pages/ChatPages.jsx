@@ -7,7 +7,12 @@ import UserList from "../components/UserList";
 import MessageList from "../components/MessageList";
 import ChatBox from "../components/ChatBox";
 
-const socket = io("http://localhost:8000");
+// const socket = io("http://localhost:8000");
+
+const socket = io("https://full-mern-chatapp-production-24b5.up.railway.app", {
+  transports: ["websocket"], // ensure only websocket transport
+});
+
 
 function ChatPage() {
   const [messages, setMessages] = useState([]);
